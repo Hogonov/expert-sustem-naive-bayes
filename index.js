@@ -28,6 +28,9 @@ classifierLearn(positiveBase, 'positive').then(() => {
         classifier.categorize(negativeCategory).then((r) => {
             console.log(`negative categorize: ${r}`)
         })
+        classifier.categorize('Biden\'s decision to end the nearly 20-year war').then((r) => {
+            console.log(`categorize: ${r}`)
+        })
     })
 })
 
